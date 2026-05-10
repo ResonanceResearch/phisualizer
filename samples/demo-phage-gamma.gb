@@ -1,0 +1,44 @@
+LOCUS       DemoGamma              28000 bp    DNA     linear   PHG 01-JAN-2026
+DEFINITION  DemoGamma mycobacteriophage complete genome.
+ACCESSION   DEMOGAMMA
+FEATURES             Location/Qualifiers
+     source          1..28000
+                     /organism="Mycobacteriophage DemoGamma"
+     CDS             800..1800
+                     /locus_tag="DG_001"
+                     /gene="1"
+                     /product="small terminase subunit"
+                     /translation="MKKLLPTAAAGGGVVVVTTTAAAKKLLPTAAAGGGVVVVTTTAAA"
+     CDS             1950..3850
+                     /locus_tag="DG_002"
+                     /gene="2"
+                     /product="large terminase subunit"
+                     /translation="MSDTERMINASELARGEAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             complement(4300..5600)
+                     /locus_tag="DG_003"
+                     /gene="3"
+                     /product="portal protein"
+                     /translation="MPORTALPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             7000..8600
+                     /locus_tag="DG_004"
+                     /gene="4"
+                     /product="major capsid protein"
+                     /translation="MCAPSIDPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             complement(10400..11800)
+                     /locus_tag="DG_005"
+                     /gene="5"
+                     /product="lysin A"
+                     /translation="MLYSINAPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             12000..13100
+                     /locus_tag="DG_006"
+                     /gene="6"
+                     /product="DNA polymerase"
+                     /translation="MPOLYMERASEPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             21000..22500
+                     /locus_tag="DG_007"
+                     /gene="7"
+                     /product="repressor protein"
+                     /translation="MREPRESSORPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+ORIGIN
+        1 gggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+//

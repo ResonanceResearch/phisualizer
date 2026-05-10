@@ -1,0 +1,54 @@
+LOCUS       DemoBeta               35000 bp    DNA     linear   PHG 01-JAN-2026
+DEFINITION  DemoBeta mycobacteriophage complete genome.
+ACCESSION   DEMOBETA
+FEATURES             Location/Qualifiers
+     source          1..35000
+                     /organism="Mycobacteriophage DemoBeta"
+     CDS             500..1500
+                     /locus_tag="DB_001"
+                     /gene="1"
+                     /product="small terminase subunit"
+                     /translation="MKKLLPTAAAGGGVVVVTTTAAAKKLLPTAAAGGGVVVVTTTAAA"
+     CDS             1680..3520
+                     /locus_tag="DB_002"
+                     /gene="2"
+                     /product="large terminase subunit"
+                     /translation="MSDTERMINASELARGEAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             complement(4100..5420)
+                     /locus_tag="DB_003"
+                     /gene="3"
+                     /product="portal protein"
+                     /translation="MPORTALPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             6250..7900
+                     /locus_tag="DB_004"
+                     /gene="4"
+                     /product="major capsid protein"
+                     /translation="MCAPSIDPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             8900..10400
+                     /locus_tag="DB_005"
+                     /gene="5"
+                     /product="tail assembly chaperone"
+                     /translation="MTAILASSEMBLYCHAPERONEAAAGGGKKKLLLPPPTTTSSSQQQ"
+     CDS             10700..14950
+                     /locus_tag="DB_006"
+                     /gene="6"
+                     /product="tape measure protein"
+                     /translation="MTAPEMEASUREPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDDHHH"
+     CDS             16500..17700
+                     /locus_tag="DB_007"
+                     /gene="7"
+                     /product="holin"
+                     /translation="MHOLINPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             complement(18000..19400)
+                     /locus_tag="DB_008"
+                     /gene="8"
+                     /product="lysin A"
+                     /translation="MLYSINAPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             26000..27500
+                     /locus_tag="DB_009"
+                     /gene="9"
+                     /product="integrase"
+                     /translation="MINTEGRASEPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+ORIGIN
+        1 cccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+//

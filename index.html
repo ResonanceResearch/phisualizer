@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PhageMap Pages</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>PhageMap Pages</h1>
+      <p>A static, GitHub Pages-ready phage genome comparison dashboard inspired by Phamerator.</p>
+    </div>
+    <div class="top-actions">
+      <button id="loadDemoBtn" class="secondary">Load demo</button>
+      <button id="exportSvgBtn" class="secondary">Export SVG</button>
+      <button id="exportPngBtn" class="secondary">Export PNG</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="panel sidebar">
+      <section>
+        <h2>1. Upload genomes</h2>
+        <p class="muted">Upload up to 10 annotated GenBank files. All parsing and visualization happen locally in your browser.</p>
+        <label class="dropzone" id="dropzone">
+          <input id="fileInput" type="file" accept=".gb,.gbk,.genbank,.txt" multiple />
+          <span>Drop .gb/.gbk files here<br><strong>or click to choose</strong></span>
+        </label>
+        <div id="fileStatus" class="status">No genomes loaded.</div>
+      </section>
+
+      <section>
+        <h2>2. Display</h2>
+        <label>Genome order
+          <select id="sortSelect">
+            <option value="input">Input order</option>
+            <option value="name">Name</option>
+            <option value="length">Genome length</option>
+            <option value="cds">CDS count</option>
+          </select>
+        </label>
+        <label>Scale
+          <input id="scaleRange" type="range" min="3" max="24" value="10" />
+          <span id="scaleValue">10 bp/px</span>
+        </label>
+        <label>Gene labels
+          <select id="labelMode">
+            <option value="auto">Auto</option>
+            <option value="gene">Gene/locus tag</option>
+            <option value="product">Product</option>
+            <option value="none">None</option>
+          </select>
+        </label>
+        <label>Color genes by
+          <select id="colorMode">
+            <option value="family">Predicted pham/family</option>
+            <option value="product">Product keyword</option>
+            <option value="strand">Direction</option>
+            <option value="source">Genome</option>
+          </select>
+        </label>
+        <label class="check"><input id="showRibbons" type="checkbox" checked /> Similarity ribbons</label>
+        <label class="check"><input id="showUnmatched" type="checkbox" checked /> Keep unmatched genes visible</label>
+      </section>
+
+      <section>
+        <h2>3. Similarity</h2>
+        <label>Ribbon rule
+          <select id="ribbonRule">
+            <option value="family">Same predicted family</option>
+            <option value="exactTranslation">Exact protein sequence</option>
+            <option value="product">Similar product text</option>
+          </select>
+        </label>
+        <label>Minimum protein k-mer similarity
+          <input id="similarityRange" type="range" min="0" max="100" value="35" />
+          <span id="similarityValue">35%</span>
+        </label>
+        <p class="muted small">This static version estimates phams from translated CDS sequences and product names. For publication-grade nucleotide alignments/HSPs, add a backend BLAST/MMseqs step later.</p>
+      </section>
+
+      <section>
+        <h2>Loaded genomes</h2>
+        <div id="genomeList" class="genome-list"></div>
+      </section>
+    </aside>
+
+    <section class="workspace">
+      <div class="panel toolbar">
+        <div id="summaryCards" class="cards"></div>
+        <div class="search-row">
+          <input id="searchBox" type="search" placeholder="Search genes, products, families, genome names..." />
+          <button id="clearSearchBtn" class="secondary">Clear</button>
+        </div>
+      </div>
+
+      <div class="panel map-wrap" id="mapPanel">
+        <svg id="genomeMap" role="img" aria-label="Genome comparison map"></svg>
+        <div id="emptyState" class="empty-state">
+          <h2>Upload GenBank files to begin</h2>
+          <p>The dashboard will draw Phamerator-like genome tracks with directional CDS arrows and similarity ribbons between adjacent phages.</p>
+        </div>
+      </div>
+
+      <div class="panel details">
+        <h2>Selected gene</h2>
+        <div id="geneDetails" class="gene-details muted">Click a gene arrow to inspect its coordinates, product, translation length, and predicted family.</div>
+      </div>
+    </section>
+  </main>
+
+  <div id="tooltip" class="tooltip" hidden></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

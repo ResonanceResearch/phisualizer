@@ -1,0 +1,49 @@
+LOCUS       DemoAlpha              32000 bp    DNA     linear   PHG 01-JAN-2026
+DEFINITION  DemoAlpha mycobacteriophage complete genome.
+ACCESSION   DEMOALPHA
+FEATURES             Location/Qualifiers
+     source          1..32000
+                     /organism="Mycobacteriophage DemoAlpha"
+     CDS             450..1450
+                     /locus_tag="DA_001"
+                     /gene="1"
+                     /product="small terminase subunit"
+                     /translation="MKKLLPTAAAGGGVVVVTTTAAAKKLLPTAAAGGGVVVVTTTAAA"
+     CDS             1550..3420
+                     /locus_tag="DA_002"
+                     /gene="2"
+                     /product="large terminase subunit"
+                     /translation="MSDTERMINASELARGEAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             complement(3900..5200)
+                     /locus_tag="DA_003"
+                     /gene="3"
+                     /product="portal protein"
+                     /translation="MPORTALPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             6000..7600
+                     /locus_tag="DA_004"
+                     /gene="4"
+                     /product="major capsid protein"
+                     /translation="MCAPSIDPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             8000..9600
+                     /locus_tag="DA_005"
+                     /gene="5"
+                     /product="tail assembly chaperone"
+                     /translation="MTAILASSEMBLYCHAPERONEAAAGGGKKKLLLPPPTTTSSSQQQ"
+     CDS             9800..13800
+                     /locus_tag="DA_006"
+                     /gene="6"
+                     /product="tape measure protein"
+                     /translation="MTAPEMEASUREPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDDHHH"
+     CDS             complement(15000..16300)
+                     /locus_tag="DA_007"
+                     /gene="7"
+                     /product="lysin A"
+                     /translation="MLYSINAPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+     CDS             21000..22100
+                     /locus_tag="DA_008"
+                     /gene="8"
+                     /product="DNA helicase"
+                     /translation="MHELICASEPROTEINAAAGGGKKKLLLPPPTTTSSSQQQRRRNNNDDD"
+ORIGIN
+        1 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+//
